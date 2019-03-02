@@ -7,3 +7,12 @@ rules:
         url: https://example.com#B
       - chance: 10
         url: https://example.com#C
+  - type: width
+    name: width
+    values:
+      - device: mobile
+        url: https://example.com#MOBILE
+      - device: tablet
+        url: https://example.com#TABLET
+      - device: desktop
+        url: https://example.com#DESKTOP

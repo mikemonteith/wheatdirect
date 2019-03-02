@@ -1,5 +1,5 @@
-//const percentage = require('./rules/percentage.js')
 import percentage from "./rules/percentage.js";
+import width from "./rules/width.js";
 
 const executeRule = rule => {
   if (typeof rule === "string") {
@@ -9,8 +9,10 @@ const executeRule = rule => {
   let nextRule;
   if (rule.type === "percentage") {
     nextRule = percentage(rule);
-  } else if (rule.type === "") {
-    // TODO: add more rule types
+  } else if (rule.type === "width") {
+    nextRule = width(rule);
+  } else {
+    throw new Error(`Rule type "${rule.type}" not found`);
   }
 
   return executeRule(nextRule);
