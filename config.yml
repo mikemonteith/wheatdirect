@@ -1,6 +1,9 @@
 rules:
   - type: percentage
     values:
-      - 10: https://example.com#A
-      - 10: https://example.com#B
-      - 10: https://example.com#C
+      - chance: 10
+        url: https://example.com#A
+      - chance: 10
+        url: https://example.com#B
+      - chance: 10
+        url: https://example.com#C

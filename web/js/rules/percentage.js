@@ -19,17 +19,12 @@ const getWeightedRandomIndex = weightingValues => {
 const percentage = config => {
   const { values } = config;
 
-  const weightingValues = values.map(item => {
-    const key = Object.keys(item)[0];
-    return parseInt(key);
-  });
+  const weightingValues = values.map(item => parseInt(item.chance));
 
   const index = getWeightedRandomIndex(weightingValues);
   const value = values[index];
 
-  return Object.values(value)[0];
-
-  return values[index];
+  return value.url;
 };
 
 export default percentage;
