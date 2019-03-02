@@ -16,6 +16,20 @@ const getWeightedRandomIndex = weightingValues => {
   }
 };
 
+const executeValue = value => {
+  if (value.url) {
+    return {
+      type: "redirect",
+      url: value.url
+    };
+  } else if (value.goto) {
+    return {
+      type: "goto",
+      rule: value.goto
+    };
+  }
+};
+
 export default config => {
   const { values } = config;
 
@@ -24,5 +38,5 @@ export default config => {
   const index = getWeightedRandomIndex(weightingValues);
   const value = values[index];
 
-  return value.url;
+  return executeValue(value);
 };

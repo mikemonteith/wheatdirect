@@ -22,7 +22,10 @@ export default config => {
     const [min, max] = defaultDeviceRanges[value.device];
 
     if (width >= min && width < max) {
-      return value.url;
+      return {
+        type: "redirect",
+        url: value.url
+      };
     }
   }
 };
