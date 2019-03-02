@@ -1,0 +1,8 @@
+# dotfiles
+.*
+
+# Handlebars
+*.hbs
+
+# Dist
+dist/

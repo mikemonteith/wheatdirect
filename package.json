@@ -1,0 +1,31 @@
+{
+  "name": "redirectr",
+  "version": "0.0.1",
+  "description": "Redirect http traffic based on configurable rules.",
+  "scripts": {
+    "build": "gulp build",
+    "prettier": "prettier --write '**/*'",
+    "lint": "prettier --check '**/*'",
+    "start": "npm run-script watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch"
+  },
+  "author": {
+    "name": "Mike Monteith",
+    "email": "mike@mikemonteith.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-rename": "^1.4.0",
+    "handlebars": "^4.1.0",
+    "js-yaml": "^3.12.2",
+    "rollup": "^1.4.0",
+    "rollup-stream": "^1.24.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}

@@ -1,0 +1,6 @@
+rules:
+  - type: percentage
+    values:
+      - 10: https://example.com#A
+      - 10: https://example.com#B
+      - 10: https://example.com#C
