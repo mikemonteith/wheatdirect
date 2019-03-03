@@ -13,6 +13,7 @@ jobs:
       script: npm run lint
 
     - stage: deploy
+      script: npm run build
       # Surge deploy needs these tokens:
       # - SURGE_LOGIN: Set it to the email address you use with Surge
       # - SURGE_TOKEN: Set it to your login token (get it by doing a surge token)
