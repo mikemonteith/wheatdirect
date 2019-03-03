@@ -37,4 +37,6 @@ const executeRule = rule => {
 
 const location = executeRule(config.rules[0]);
 
-// TODO: do something with the location i.e redirect
+if (location) {
+  window.location.href = location;
+}
