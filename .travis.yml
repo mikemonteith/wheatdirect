@@ -20,5 +20,5 @@ jobs:
         on: master
         provider: surge
         project: ./dist/
-        domain: redirectr.surge.sh
+        domain: wheatdirect.surge.sh
         skip_cleanup: true
