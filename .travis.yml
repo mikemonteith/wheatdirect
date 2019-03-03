@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - lts
+  - "lts/*"
 
 stages:
   - test
@@ -13,6 +13,7 @@ jobs:
       script: npm run lint
 
     - stage: deploy
+      script: npm run build
       # Surge deploy needs these tokens:
       # - SURGE_LOGIN: Set it to the email address you use with Surge
       # - SURGE_TOKEN: Set it to your login token (get it by doing a surge token)
@@ -20,5 +21,5 @@ jobs:
         on: master
         provider: surge
         project: ./dist/
-        domain: redirectr.surge.sh
+        domain: wheatdirect.surge.sh
         skip_cleanup: true

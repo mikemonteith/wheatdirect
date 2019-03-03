@@ -1,4 +1,4 @@
-# Redirectr
+# WheatDirect
 
 Redirect http traffic based on configurable rules.
 
