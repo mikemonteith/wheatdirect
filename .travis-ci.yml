@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - lts
+
+stages:
+  - test
+  - deploy
+
+jobs:
+  include:
+    - stage: test
+      name: linting
+      script: npm run lint
+
+    - stage: deploy
+      # Surge deploy needs these tokens:
+      # - SURGE_LOGIN: Set it to the email address you use with Surge
+      # - SURGE_TOKEN: Set it to your login token (get it by doing a surge token)
+      deploy:
+        on: master
+        provider: surge
+        project: ./dist/
+        domain: redirectr.surge.sh
+        skip_cleanup: true
