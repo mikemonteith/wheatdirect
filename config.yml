@@ -1,27 +1,7 @@
 rules:
   - type: percentage
     values:
-      - chance: 10
-        goto: width_a
-      - chance: 10
-        goto: width_b
-      - chance: 10
-        url: https://example.com#C
-  - type: width
-    name: width_a
-    values:
-      - device: mobile
-        url: https://example.com#A-MOBILE
-      - device: tablet
-        url: https://example.com#A-TABLET
-      - device: desktop
-        url: https://example.com#A-DESKTOP
-  - type: width
-    name: width_b
-    values:
-      - device: mobile
-        url: https://example.com#B-MOBILE
-      - device: tablet
-        url: https://example.com#B-TABLET
-      - device: desktop
-        url: https://example.com#B-DESKTOP
+      - chance: 50
+        url: https://778p6776.optimalworkshop.com/treejack/ksbymk78
+      - chance: 50
+        url: https://778p6776.optimalworkshop.com/treejack/84626swy

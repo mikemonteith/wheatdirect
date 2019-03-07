@@ -6,7 +6,7 @@ Redirect http traffic based on configurable rules.
 
 Update the rules in [config.yml](https://github.com/mikemonteith/wheatdirect/blob/master/config.yml).
 
-Changes to the master branch will be deployed to https://wheatdirect.surge.sh
+Changes to the master branch will be deployed to https://nhsuk-survey.surge.sh
 
 ## Rules
 
