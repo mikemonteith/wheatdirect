@@ -19,7 +19,7 @@
     "gulp": "^4.0.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-rename": "^1.4.0",
-    "handlebars": "^4.1.0",
+    "handlebars": "^4.5.3",
     "js-yaml": "^3.12.2",
     "rollup": "^1.4.0",
     "rollup-stream": "^1.24.1",
